@@ -14,6 +14,8 @@ body {
 a {
   color: #000;
   text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 #navlinks {
@@ -27,11 +29,22 @@ a {
 }
 
 header {
+  /* border-bottom: 1px solid black; */
   height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 #navigation {
   display: none;
+}
+
+#burger {
+  background-color: #fff;
+  border: none;
 }
 
 /* Media Query für größere Bildschirme */
@@ -42,5 +55,15 @@ header {
 
   #burger {
     display: none;
+  }
+
+  /* stellt die li nebeneinander auf dem großen Gerät*/
+  #navlinks {
+    display: flex;
+  }
+
+  #navlinks li {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
