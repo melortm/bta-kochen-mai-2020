@@ -47,6 +47,73 @@ header {
   border: none;
 }
 
+#intro {
+  background-image: url('img/intro.jpg');
+  height: 100vh; /* vh bedeutet viewport height */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.button {
+  background-color: white;
+  color: #374a67;
+  border-radius: 5px;
+  border-color: #374a67;
+  border-style: solid;
+  border-width: 2px;
+  /* border: 1px solid #374a67*/
+  padding: 15px;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s linear;
+}
+
+.card .button {
+  background-color: #374a67;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+/* Der Pseudo-Selektor hover verändert Werte, wenn der Nutzer mit der Maus über einem Element schwebt*/
+.button:hover {
+  color: #fff; /* rgb(255,255,255)*/
+  background-color: #374a67;
+}
+
+.card .button:hover {
+  background-color: #fff;
+  color: #374a67;
+}
+
+h3 a,
+p a {
+  text-transform: none;
+}
+
+p a {
+  color: #828282;
+  font-weight: normal;
+}
+
+/* responsive Images */
+.card img {
+  width: 100%;
+}
+
+.card {
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2);
+  margin: 1rem;
+  overflow: hidden;
+}
+
 /* Media Query für größere Bildschirme */
 @media (min-width: 960px) {
   #navigation {
@@ -65,5 +132,9 @@ header {
   #navlinks li {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+
+  .row {
+    display: flex;
   }
 }
